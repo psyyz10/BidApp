@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<dwr>
+
+  <allow>
+
+    <!--
+    <filter class="org.getahead.dwrdemo.monitor.MonitoringAjaxFilter"/>
+    <filter class="org.directwebremoting.filter.ExtraLatencyAjaxFilter">
+      <param name="delay" value="200"/>
+    </filter>
+    -->
+
+    <!-- intro - for the test on index.html -->
+    
+    <create creator="new" javascript="registerbean">
+      <param name="class" value="com.auction.logic.RegisterBean"/>
+  </allow>
+
+</dwr>

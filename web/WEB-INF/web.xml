@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <description>Location to store uploaded file</description>
+        <param-name>file-upload</param-name>
+        <param-value>
+            \image\
+        </param-value>
+    </context-param>
+    <!-- dwr servlet -->
+    <servlet>
+        <display-name>DWR Servlet</display-name>
+        <servlet-name>dwr-invoker</servlet-name>
+        <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>crossDomainSessionSecurity</param-name>
+            <param-value>false</param-value>
+        </init-param>
+    </servlet>
+    <!-- servlet class -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.auction.action.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.auction.action.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.auction.action.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadImageServlet</servlet-name>
+        <servlet-class>com.auction.action.UploadImageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangeMessagePageServlet</servlet-name>
+        <servlet-class>com.auction.action.ChangeMessagePageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendMessageServlet</servlet-name>
+        <servlet-class>com.auction.action.SendMessageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetMessegeServlet</servlet-name>
+        <servlet-class>com.auction.action.GetMessegeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateAuctionServlet</servlet-name>
+        <servlet-class>com.auction.action.CreateAuctionServlet</servlet-class>
+    </servlet>
+    <!-- servelet mapping -->
+    
+    <servlet-mapping>
+        <servlet-name>dwr-invoker</servlet-name>
+        <url-pattern>/dwr/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadImageServlet</servlet-name>
+        <url-pattern>/UploadImageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangeMessagePageServlet</servlet-name>
+        <url-pattern>/ChangeMessagePageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendMessageServlet</servlet-name>
+        <url-pattern>/SendMessageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetMessegeServlet</servlet-name>
+        <url-pattern>/GetMessegeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateAuctionServlet</servlet-name>
+        <url-pattern>/CreateAuctionServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

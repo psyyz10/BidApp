@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		
+		<meta name="viewport" content="width=device-width">
+		<meta name = "viewport" content = "user-scalable=no, width=device-width">
+		
+		<title>BidApp!</title>
+				
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+		
+		<style>
+			img.fullscreen {
+				max-height: 100%;
+				max-width: 100%;
+			}
+		</style>
+		
+		<style>
+			.ui-grid-b img
+			{
+				width  : 100%;
+				height : auto;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+	
+	
+	<!--HOME PAGE-->
+		
+		<div data-role="page" id = "homePage">
+
+		<!--Header-->
+			
+			<header data-role="header" data-position="fixed">
+				
+				<h1><a href="#homePage"><img src="Logo.png" width=80%></a></h1>
+				
+			</header>
+			
+			
+			<!--Content-->
+			
+			<article data-role="content">
+			
+				<h1>BidApp! Administrators Login</h1>
+				
+				<form>
+				
+					<ul data-role="listview">
+					
+						<li>
+							Username:</br>
+							<input type="text" name="name" />
+						</li>
+						
+						<li>
+							Password:</br>
+							<input type="password" name="name" />
+						</li>
+						
+						<li>
+							<a href="#reportsPage" data-role="button">Login</a>
+						</li>
+						
+					</ul>
+					
+				</form>
+				
+			</article>
+			
+		</div>
+	
+	
+	<!--REPORTS PAGE-->
+		
+		<div data-role="page" id = "reportsPage">
+
+		<!--Header-->
+			
+			<header data-role="header" data-position="fixed">
+				
+				<h1><a href="#reportsPage"><img src="Logo.png" width=80%></a></h1>
+				
+			</header>
+			
+			
+			<!--Content-->
+			
+			<article data-role="content">
+			
+				<h1>Reports</h1>
+				
+				<ul data-role="listview">
+				
+					<li data-role="list-divider">Friday, October 8, 2010</li>
+					
+					<li>
+						<a href="#viewReportPage">
+							<h3>Marike Littlefair</h3>
+							<p>This man has just threatened...</p>
+							<p class="ui-li-aside"><strong>6:24</strong>AM</p>
+						</a>
+					</li>
+					
+					<li data-role="list-divider">Thursday, October 7, 2010</li>
+					
+					<li>
+						<a href="">
+							<h3>Yao Zhang</h3>
+							<p>I am concerned with...</p>
+							<p class="ui-li-aside"><strong>6:24</strong>AM</p>
+						</a>
+					</li>
+					
+					<li>
+						<a href="">
+							<h3>Tom Hadiss</h3>
+							<p>I have not received my item from...</p>
+							<p class="ui-li-aside"><strong>6:24</strong>AM</p>
+						</a>
+					</li>
+				
+					<li data-role="list-divider">Wednesday, October 6, 2010</li>
+
+					<li>
+						<a href="">
+							<h3>Ryan Lobo</h3>
+							<p>I have not received payment from...</p>
+							<p class="ui-li-aside"><strong>6:24</strong>AM</p>
+						</a>
+					</li>
+					
+					<li data-role="list-divider">Tuesday, October 5, 2010</li>
+					
+					<li>
+						<a href="">
+							<h3>Jake Howland</h3>
+							<p>It appears this account is fake...</p>
+							<p class="ui-li-aside"><strong>6:24</strong>AM</p>
+						</a>
+					</li>
+					
+				</ul>
+				
+			</article>
+
+			
+			<!--Footer-->
+			
+			<footer data-role="footer" data-position="fixed">
+			
+				<nav data-role="navbar">
+					<ul>
+						<li><a data-role="button" data-icon="back" data-rel="back">Back</a></li>
+						<li><a href="#homePage" data-icon="star">Log Out</a></li>
+					</ul>
+				</nav>
+				
+			</footer>
+			
+		</div>
+		
+		
+	<!--VIEW REPORT PAGE-->
+		
+		<div data-role="page" id = "viewReportPage">
+
+		<!--Header-->
+			
+			<header data-role="header" data-position="fixed">
+				
+				<h1><a href="#reportsPage"><img src="Logo.png" width=80%></a></h1>
+				
+			</header>
+			
+			
+			<!--Content-->
+			
+			<article data-role="content">
+			
+				<div class="ui-body ui-body-d">
+				
+					<h1>Marike Littlefair Reporting Ryan Lobo</h1>
+					
+					<p><em>I would like to report borderline stalking behaviour by Ryan Lobo. The man is acting very stangely and has been asking for my number and address when he hasn't even bought an item.</em></p>
+					
+					</hr>
+				</div>
+				
+				</br>
+				
+				<div class="ui-body ui-body-d">
+				
+					<h3>Bid History</h3>
+					
+					<ul data-role="listview" data-filter="true">
+						
+						<li>
+							<a href="#adminViewAuctionPage">
+								<img src="Toaster.jpg">
+								<h1>Toaster</h1>
+							</a>
+						</li>
+							
+						<li>
+							<a href="">
+								<h1>Sofa</h1>
+								<img src="Sofa.jpg">
+							</a>
+						</li>
+							
+						<li>
+							<a href="">
+								<h1>Lipstick</h1>
+								<img src="Lipstick.jpg">
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				</br>
+				
+				<div class="ui-body ui-body-d">
+					
+					<h3>Conversation History</h3>
+					
+					<ul data-role="listview">
+						<li>
+							<img src="Marike.jpg" width = 100%>
+							<p>OK, thanks.</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<img src="George.jpg" width = 100%>
+							<p>Yep.</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<img src="Marike.jpg" width = 100%>
+							<p>Just wasting space for this conversation instead?</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<img src="George.jpg" width = 100%>
+							<p>Nope.</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<img src="Marike.jpg" width = 100%>
+							<p>Any photos at all?</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<img src="George.jpg" width = 100%>
+							<p>Unfortunately not.</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+						<li>
+							<img src="Marike.jpg" width = 100%>
+							<p>Hi, do you have any more photos of the toaster you are selling?</p>
+							<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+						</li>
+					</ul>
+				
+				</div>
+				
+				</br>
+				
+				<div class="ui-body ui-body-d">
+					<label for="1">Marike Littlefair</label>
+					<input name="who" id="1" type="radio" data-theme="e">
+					<label for="2">Ryan Lobo</label>
+					<input name="who" id="2" type="radio" data-theme="e">
+				</div>
+				
+				<div class="ui-body ui-body-b">
+					<p>
+						<a href="#messageUserPage" data-role="button" data-icon="plus">Message User</a>
+					</p>
+					<p>
+						<a href="#banUserPage" data-role="button" data-icon="delete">Ban User</a>
+					</p>
+					<p>
+						<a href="" data-role="button" data-theme="a" data-icon="delete">Close this report</a>
+					</p>
+				</div>
+				
+			</article>
+
+			
+			<!--Footer-->
+			
+			<footer data-role="footer" data-position="fixed">
+			
+				<nav data-role="navbar">
+					<ul>
+						<li><a data-role="button" data-icon="back" data-rel="back">Back</a></li>
+						<li><a href="#reportsPage" data-icon="grid">More Reports</a></li>
+						<li><a href="#homePage" data-icon="star">Log Out</a></li>
+					</ul>
+				</nav>
+				
+			</footer>
+			
+		</div>
+		
+		
+	<!--(ADMIN) VIEW AUCTION PAGE-->
+		
+		<div data-role="page" id = "adminViewAuctionPage" data-add-back-btn="true">
+		
+		
+			<!--Header-->
+			
+			<header data-role="header" data-position="fixed">
+				
+				<h1><a href="#reportsPage"><img src="Logo.png" width=80%></a></h1>
+				
+			</header>
+			
+			
+			<!--Content-->
+			
+			<article data-role="content">
+			
+				<h1>Viewing Past Auction: Toaster</h1>
+				
+				<div class="ui-body ui-body-e">
+					<p>Won for: &pound;5.76</p>
+					<p>Winning Bidder: Marike Littlefair</p>
+				</div>
+				
+				<br>
+				
+				<div class="ui-body ui-body-d">
+				
+					<h1>Toaster</h1>
+					
+					<h3>Description</h3>
+					
+					<p>The Metropolis Collection by De'Longhi is designed to offer the ultimate in both style and practicality. Boldly combining the strong expressionist shapes of the 1940s and 1950s with inimitable classic Italian style, the Metropolis toaster--with matching kettle available--really is the essence of good design.</p>
+					
+					<h3>Images</h3>
+					
+					<table width = 100%>
+						<tr>
+							<td width = 50%><img src="PowerCable.jpg" width = 100%></td><td width = 50%><img src="Toast.jpg" width = 100%></td>
+						</tr>
+						<tr>
+							<td><img src="Toaster.jpg" alt="gallery thumbnail" width="100%"/></td><td></td>
+						</tr>
+					</table>
+				</div>
+				
+			</article>
+
+			
+			<!--Footer-->
+			
+			<footer data-role="footer" data-position="fixed">
+			
+				<nav data-role="navbar">
+					<ul>
+						<li><a data-role="button" data-icon="back" data-rel="back">Back</a></li>
+						<li><a href="#homePage" data-icon="star">Log Out</a></li>
+					</ul>
+				</nav>
+				
+			</footer>
+			
+		</div>
+		
+		
+	<!--MESSAGE USER PAGE-->
+		
+		<div data-role="page" id = "messageUserPage">
+
+		<!--Header-->
+			
+			<header data-role="header" data-position="fixed">
+				
+				<h1><a href="#reportsPage"><img src="Logo.png" width=80%></a></h1>
+				
+			</header>
+			
+			
+			<!--Content-->
+			
+			<article data-role="content">
+			
+				<h1>Conversation with Marike Littlefair</h1>
+				
+				<div data-role="fieldcontain">
+					Talk:</br>
+					<textarea name="textarea" id="textarea"></textarea>
+				</div>
+				
+				</br>
+				
+				<ul data-role="listview">
+					<li>
+						<img src="Marike.jpg">
+						<p>Scary stuff.</p>
+						<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+					</li>
+					<li>
+						<img src="BidappAdmin.png">
+						<p>The BidApp Gods.</p>
+						<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+					</li>
+					<li>
+						<img src="Marike.jpg">
+						<p>Who are you?</p>
+						<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+					</li>
+					<li>
+						<img src="BidappAdmin.png">
+						<p>We've been watching everything you've been doing.</p>
+						<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+					</li>
+					<li>
+						<img src="Marike.jpg">
+						<p>What?</p>
+						<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+					</li>
+					<li>
+						<img src="BidappAdmin.png">
+						<p>You've been naughty haven't you.</p>
+						<p class="ui-li-aside"><strong>6:24</strong>PM</p>
+					</li>
+				</ul>
+				
+			</article>
+
+			
+			<!--Footer-->
+			
+			<footer data-role="footer" data-position="fixed">
+			
+				<nav data-role="navbar">
+					<ul>
+						<li><a data-role="button" data-icon="back" data-rel="back">Back</a></li>
+						<li><a href="#reportsPage" data-icon="grid">More Reports</a></li>
+						<li><a href="#homePage" data-icon="star">Log Out</a></li>
+					</ul>
+				</nav>
+				
+			</footer>
+			
+		</div>
+		
+		
+	<!--BAN USER PAGE-->
+		
+		<div data-role="page" id = "banUserPage">
+
+		<!--Header-->
+			
+			<header data-role="header" data-position="fixed">
+				
+				<h1><a href="#reportsPage"><img src="Logo.png" width=80%></a></h1>
+				
+			</header>
+			
+			
+			<!--Content-->
+			
+			<article data-role="content">
+			
+				<div class="ui-body ui-body-e">
+				
+					<h1>You are about to ban the user: Ryan Lobo</h1>
+					
+					<p>Write your reason to be seen by Ryan Lobo</p>
+					<textarea name="banReason"></textarea>
+					
+					<p>Write an explanation message to all associates of Ryan Lobo and his auctions</p>
+					<textarea name="relationsReason"></textarea>
+					
+					<a href="#banUserPage" data-role="button" data-icon="delete">Ban User</a>
+				</div>
+				
+			</article>
+
+			
+			<!--Footer-->
+			
+			<footer data-role="footer" data-position="fixed">
+			
+				<nav data-role="navbar">
+					<ul>
+						<li><a data-role="button" data-icon="back" data-rel="back">Back</a></li>
+						<li><a href="#reportsPage" data-icon="grid">More Reports</a></li>
+						<li><a href="#homePage" data-icon="star">Log Out</a></li>
+					</ul>
+				</nav>
+				
+			</footer>
+			
+		</div>
+
+	</body>
+	
+</html>

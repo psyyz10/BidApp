@@ -1,0 +1,2 @@
+Some jar files are in the directory : BidAPP\web\WEB-INF\lib
+There jar file need to be built path to before runing the project
