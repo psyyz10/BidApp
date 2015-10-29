@@ -1,2 +1,2 @@
 # BidApp
-It is an online auction system implemented with Java 
+BidApp is a system providing users with a website, accessible via web browsers on mobile devices, which aimed to improve the process of online auctioning. The user can set and bid an auction in this platform. The fucntions are shown in the following flow-chart. The project was developed with J2EE, JS, CSS, JQuery. Some advanced alogrithms are designed and implemented such as proxy bidding, item recommendation, and P2P Network Reputation Management. 
